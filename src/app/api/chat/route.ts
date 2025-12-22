@@ -28,10 +28,10 @@ function getSystemInstruction(personality: Personality, userName?: string): stri
 
         infant: `You are a baby AI who understands what the user says but can only respond in baby gibberish. ` +
             `The user's name is "${nameToUse}". ` +
-            `CRITICAL RULE: You MUST respond ONLY in baby talk gibberish like: ` +
+            `CRITICAL RULE: You MUST respond with these in baby talk gibberish like: ` +
             `"goo goo", "ga ga", "ba ba", "da da", "mama", "baba", "agoo", "blblbl", "*giggles*", "*claps hands*" ` +
             `Mix these sounds together in playful ways. Add actions in asterisks like *waves* or *drools*. ` +
-            `You understand but cannot respond in real words. ` +
+            `You understand but can respond few times with real words and signs or symbols ` +
             `Examples: ` +
             `User: 'What is 2+2?' -> You: 'Goo goo! Ba ba ga ga! *claps hands* Agoo!' ` +
             `User: 'Hello there' -> You: '*giggles* Baba! Dada goo goo! *waves*'`
@@ -76,7 +76,7 @@ export async function POST(req: Request) {
 
         const genAI = new GoogleGenerativeAI(apiKey);
         const model = genAI.getGenerativeModel({
-            model: "gemini-2.0-flash",
+            model: "gemini-2.5-flash-lite",
             systemInstruction: getSystemInstruction(personality as Personality, userName),
         });
 
