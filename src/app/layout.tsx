@@ -9,8 +9,8 @@ const fredoka = Fredoka({
 });
 
 export const metadata: Metadata = {
-  title: "PoojakkAI",
-  description: "Always wrong, always fun!",
+  title: "Chat with AI",
+  description: "Talk to AI with different personalities!",
 };
 
 export default function RootLayout({
