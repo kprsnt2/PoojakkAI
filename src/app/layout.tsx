@@ -9,8 +9,8 @@ const fredoka = Fredoka({
 });
 
 export const metadata: Metadata = {
-  title: "Chat with AI",
-  description: "Talk to AI with different personalities!",
+  title: "PersonaAI - Multi-Personality Chat",
+  description: "Chat with AI in 3 unique personalities: Teen, Child, and Infant modes!",
 };
 
 export default function RootLayout({

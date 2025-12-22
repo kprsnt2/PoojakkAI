@@ -157,7 +157,7 @@ export default function ChatInterface() {
                         <Sparkles size={24} />
                     </div>
                     <div>
-                        <h1 className="font-comic font-black text-2xl text-white tracking-wider drop-shadow-md">Chat with AI</h1>
+                        <h1 className="font-comic font-black text-2xl text-white tracking-wider drop-shadow-md">PersonaAI</h1>
                         <p className="text-xs font-bold text-yellow-900">
                             {currentPersonality.name} Mode • {currentPersonality.desc}
                             {userName && ` • Hi ${userName}!`}
